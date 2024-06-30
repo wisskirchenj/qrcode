@@ -25,7 +25,7 @@ class QrController {
         return ok().build();
     }
 
-    @GetMapping(value = "/qrcode")
+    @GetMapping(value = "/qrcode", produces = "image/png")
     ResponseEntity<BufferedImage> qrcode(@Max(350) @Min(150) int size) {
         return ok(imageService.getWhiteSquare(size));
     }

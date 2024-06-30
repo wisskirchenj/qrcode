@@ -26,7 +26,7 @@ class QrcodeApplicationTests {
 
     @Test
     void qrcodeCall_returnsImagePng() throws Exception {
-        mockMvc.perform(MockMvcRequestBuilders.get("/api/qrcode"))
+        mockMvc.perform(MockMvcRequestBuilders.get("/api/qrcode?size=200"))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.IMAGE_PNG_VALUE));
     }

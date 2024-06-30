@@ -7,11 +7,11 @@ and are easily read by smartphones. We generate QR Codes programmatically, and i
 
 ## Technology / External Libraries
 
-- Java 21
-- Spring Boot 3.2.5
+- Java 22
+- Spring Boot 3.3.1
 - Acutator / Web
 - Lombok
-- Gradle 8.7
+- Gradle 8.8
 
 ## Repository Contents
 
@@ -22,3 +22,5 @@ Sources for all project tasks (5 stages) with tests and configurations.
 [//]: # (Project was completed on 29.10.23)
 
 19.04.24 Project started and stage 1 completed. Just the controller setup.
+
+30.06.24 Stage 2 completed. Generate a white BufferedImage as QR-Code. Use Spring BufferedImageHttpMessageConverter.

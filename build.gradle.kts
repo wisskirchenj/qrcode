@@ -22,6 +22,9 @@ repositories {
 }
 
 dependencies {
+    val zxingVersion = "3.5.3"
+    implementation("com.google.zxing:core:$zxingVersion")
+    implementation("com.google.zxing:javase:$zxingVersion")
     implementation("org.springframework.boot:spring-boot-starter-actuator")
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springframework.boot:spring-boot-starter-validation")
